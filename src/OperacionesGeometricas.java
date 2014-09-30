@@ -6,7 +6,8 @@ public class OperacionesGeometricas
 
 public static void main (String args[]) 
 	{
- string opcion;
+
+ String opcion, rectangulo="rectangulo", circulo="circulo";
  double radio, base, altura;
 
  Scanner sc = new Scanner(System.in);
@@ -17,11 +18,11 @@ public static void main (String args[])
 
  opcion = sc.next();
 
- if(opcion.equalsIgnoreCase("circulo"){
+ if(opcion.equalsIgnoreCase(circulo))
+ {
 
   System.out.print("\ningresa el radio del circulo a analizar: ");
  
-  Scanner sc = new Scanner(System.in);
   System.out.print("\ningresa el radio del circulo a analizar: ");
   radio = sc.nextDouble();
   operaciones.setRadio(radio);
@@ -31,7 +32,8 @@ public static void main (String args[])
 
  }
 
- if(opcion.equalsIgnoreCase("rectangulo") {
+ if(opcion.equalsIgnoreCase(rectangulo)) 
+ {
 
   System.out.print("\ningresa la base del rectangulo a analizar: ");
   base = sc.nextDouble();
@@ -46,7 +48,8 @@ public static void main (String args[])
 
  }
 
- else{
+ else
+ {
 
   System.out.println("\nVa a ser que no has escrito bien...");
   System.out.println("\nPrueba otra vez...");
