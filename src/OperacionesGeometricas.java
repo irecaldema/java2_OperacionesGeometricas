@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import librerias.geometria.*;
+import com.zubiri.geometria.*;
 
 public class OperacionesGeometricas 
 {
@@ -25,7 +25,7 @@ public static void main (String args[])
  
   System.out.print("\ningresa el radio del circulo a analizar: ");
   radio = sc.nextDouble();
-  operaciones.setRadio(radio);
+  circu.setRadio(radio);
 
   System.out.println("\nEl area del circulo es: " + circu.Area());
   System.out.println("\nLa circunferencia del circulo es: " + circu.Circu());
@@ -37,11 +37,11 @@ public static void main (String args[])
 
   System.out.print("\ningresa la base del rectangulo a analizar: ");
   base = sc.nextDouble();
-  operaciones.setBase(base);
+  recta.setBase(base);
 
-  System.out.print("\ningresa la base del rectangulo a analizar: ");
-  base = sc.nextDouble();
-  operaciones.setAltura(altura);
+  System.out.print("\ningresa la altura del rectangulo a analizar: ");
+  altura = sc.nextDouble();
+  recta.setAltura(altura);
 
   System.out.println("\nEl area del rectangulo es: " + recta.Area());
   System.out.println("\nEl Perimetro del rectangulo es: " + recta.Peri());
