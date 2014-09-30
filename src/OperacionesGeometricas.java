@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import geometria.*;
+import librerias.geometria.*;
 
 public class OperacionesGeometricas 
 {
