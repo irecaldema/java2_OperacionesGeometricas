@@ -1,4 +1,5 @@
 import java.util.Scanner;
+//CLASSPATH=:/home/zubiri/ProyectosJava; export CLASSPATH
 import com.zubiri.geometria.*;
 
 public class OperacionesGeometricas 
@@ -31,31 +32,33 @@ public static void main (String args[])
   System.out.println("\nLa circunferencia del circulo es: " + circu.Circu());
 
  }
-
- if(opcion.equalsIgnoreCase(rectangulo)) 
+ else 
  {
+  if(opcion.equalsIgnoreCase(rectangulo)) 
+  {
+ 
+   System.out.print("\ningresa la base del rectangulo a analizar: ");
+   base = sc.nextDouble();
+   recta.setBase(base);
 
-  System.out.print("\ningresa la base del rectangulo a analizar: ");
-  base = sc.nextDouble();
-  recta.setBase(base);
+   System.out.print("\ningresa la altura del rectangulo a analizar: ");
+   altura = sc.nextDouble();
+   recta.setAltura(altura);
 
-  System.out.print("\ningresa la altura del rectangulo a analizar: ");
-  altura = sc.nextDouble();
-  recta.setAltura(altura);
+   System.out.println("\nEl area del rectangulo es: " + recta.Area());
+   System.out.println("\nEl Perimetro del rectangulo es: " + recta.Peri());
 
-  System.out.println("\nEl area del rectangulo es: " + recta.Area());
-  System.out.println("\nEl Perimetro del rectangulo es: " + recta.Peri());
+  }
 
+  else
+  {
+
+   System.out.println("\nVa a ser que no has escrito bien...");
+   System.out.println("\nPrueba otra vez...");
+
+  }
  }
-
- else
- {
-
-  System.out.println("\nVa a ser que no has escrito bien...");
-  System.out.println("\nPrueba otra vez...");
-
- }
-
+ 
  System.out.println("\n\nEGUN ONA IZAN!!\n");
 	}
 }
