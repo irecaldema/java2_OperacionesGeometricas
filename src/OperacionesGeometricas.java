@@ -23,8 +23,6 @@ public static void main (String args[])
  {
 
   System.out.print("\ningresa el radio del circulo a analizar: ");
- 
-  System.out.print("\ningresa el radio del circulo a analizar: ");
   radio = sc.nextDouble();
   circu.setRadio(radio);
 
@@ -49,7 +47,6 @@ public static void main (String args[])
    System.out.println("\nEl Perimetro del rectangulo es: " + recta.Peri());
 
   }
-
   else
   {
 
