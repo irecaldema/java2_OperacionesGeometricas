@@ -8,7 +8,7 @@ public class OperacionesGeometricas
 public static void main (String args[]) 
 	{
 
- String opcion, rectangulo="rectangulo", circulo="circulo";
+ String opcion;
  double radio, base, altura;
 
  Scanner sc = new Scanner(System.in);
@@ -19,7 +19,7 @@ public static void main (String args[])
 
  opcion = sc.next();
 
- if(opcion.equalsIgnoreCase(circulo))
+ if(opcion.equalsIgnoreCase("circulo"))
  {
 
   System.out.print("\ningresa el radio del circulo a analizar: ");
@@ -32,7 +32,7 @@ public static void main (String args[])
  }
  else 
  {
-  if(opcion.equalsIgnoreCase(rectangulo)) 
+  if(opcion.equalsIgnoreCase("rectangulo")) 
   {
  
    System.out.print("\ningresa la base del rectangulo a analizar: ");
