@@ -12,8 +12,6 @@ public static void main (String args[])
  double radio, base, altura;
 
  Scanner sc = new Scanner(System.in);
- Circulo circu = new Circulo();
- Rectangulo recta = new Rectangulo();
 
  System.out.print("\nElija la figura que quiere analizar: (Rectangulo/Circulo) ");
 
@@ -24,7 +22,8 @@ public static void main (String args[])
 
   System.out.print("\ningresa el radio del circulo a analizar: ");
   radio = sc.nextDouble();
-  circu.setRadio(radio);
+ 
+  Circulo circu = new Circulo(radio);
 
   System.out.println("\nEl area del circulo es: " + circu.Area());
   System.out.println("\nLa circunferencia del circulo es: " + circu.Circu());
@@ -37,11 +36,11 @@ public static void main (String args[])
  
    System.out.print("\ningresa la base del rectangulo a analizar: ");
    base = sc.nextDouble();
-   recta.setBase(base);
 
    System.out.print("\ningresa la altura del rectangulo a analizar: ");
    altura = sc.nextDouble();
-   recta.setAltura(altura);
+   
+   Rectangulo recta = new Rectangulo(base,altura);
 
    System.out.println("\nEl area del rectangulo es: " + recta.Area());
    System.out.println("\nEl Perimetro del rectangulo es: " + recta.Peri());
