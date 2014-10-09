@@ -27,11 +27,8 @@ public static void main (String args[])
   System.out.println("\nLa circunferencia del circulo es: " + circu.circu());
 
  }
- else 
- {
-  if(opcion=='R'||opcion=='r') 
-  {
- 
+ else  if(opcion=='R'||opcion=='r')
+ { 
    System.out.print("\ningresa la base del rectangulo a analizar: ");
    base = sc.nextDouble();
 
@@ -43,12 +40,11 @@ public static void main (String args[])
    System.out.println("\nEl area del rectangulo es: " + recta.area());
    System.out.println("\nEl Perimetro del rectangulo es: " + recta.peri());
 
-  }
-  else
-  {
+ }
+ else
+ {
    System.out.println("\nVa a ser que no has escrito bien...");
    System.out.println("\nPrueba otra vez...");
-  }
  }
  
  System.out.print("\nElija la figura que quiere analizar: Rectangulo (R)  Circulo (C) Terminar (T)"); 
