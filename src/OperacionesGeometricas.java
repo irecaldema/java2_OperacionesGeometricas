@@ -10,6 +10,7 @@ public static void main (String args[])
  Scanner sc = new Scanner(System.in);
  
  System.out.print("\nElija la figura que quiere analizar: Rectangulo (R)  Circulo (C) Terminar (T)  "); 
+ System.out.print("\n");
  opcion = sc.next().charAt(0);
 
  while (opcion!='T'&&opcion!='t')
@@ -51,6 +52,7 @@ public static void main (String args[])
  }
  
  System.out.print("\nElija la figura que quiere analizar: Rectangulo (R)  Circulo (C) Terminar (T)"); 
+ System.out.print("\n");
  opcion = sc.next().charAt(0);
 			}
  System.out.println("\n\nEGUN ONA IZAN!!\n");
